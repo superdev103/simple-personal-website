@@ -24,7 +24,7 @@ section .card0, .card1
 {
     position: relative;
     width: 300px;
-    height: 380px;
+    height: 400px;
     transform-style: preserve-3d;
     transition: all 1s linear;
 }
@@ -297,15 +297,21 @@ section.light .card0 .front .toggle:before, .light .card1 .front .toggle:before
     content: '\f185';
 }
 
-section .mobile
-{
-    position: absolute;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-section .mobile h3
-{   
-    font-size: xxx-large;
-    color: #2fa1ff;
+@media (max-width: 768px) {
+    section
+    {
+        min-height: 100vh;
+    }
+
+    section .card0, .card1 
+    {
+        max-width: calc(100vw - 16vw);
+        height: calc(100vh - 38vh);
+    }
+    section .front,
+    section .back
+    {
+        width: 100%;
+        height: 100%;
+    }
 }
