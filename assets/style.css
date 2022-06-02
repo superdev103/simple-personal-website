@@ -308,10 +308,4 @@ section.light .card0 .front .toggle:before, .light .card1 .front .toggle:before
         max-width: calc(100vw - 16vw);
         height: calc(100vh - 38vh);
     }
-    section .front,
-    section .back
-    {
-        width: 100%;
-        height: 100%;
-    }
 }
